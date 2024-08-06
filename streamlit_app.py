@@ -4,4 +4,4 @@ st.title('🤖 ML Visualization App')
 
 st.info('This app builds a ML model')
 
-with st.expander("data"):
+with st.expander('data'):
