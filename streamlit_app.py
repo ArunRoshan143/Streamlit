@@ -1,5 +1,5 @@
 import streamlit as st
 
-st.title('🎈  Name')
+st.title('🤖 ML Visualization')
 
 st.write('Hello world!')
