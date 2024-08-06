@@ -6,8 +6,6 @@ st.info('This app builds a ML model')
 
 with st.expander('data'):
   st.info('This app builds a ML model')
-  if not st.session_state.form_submitted:
-    with st.form("details_form"):
         name = st.text_input('Name')
         age = st.number_input('Age', min_value=1, max_value=100)
         symptoms = st.selectbox('Select your primary symptom', options=unique_symptoms)
