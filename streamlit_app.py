@@ -27,12 +27,14 @@ st.line_chart(chart_data)
 
 import streamlit as st
 
-st.title('Streamlit Widgets Example')
+st.title('Log In')
 
 # Text input
 name = st.text_input('Enter your name')
 st.write(f'Hello, {name}!')
 
+agee=st.text_input('ENter Your Age')
+st.write(f'Your age,{agee}')
 # Slider
 age = st.slider('Select your age', 0, 100, 25)
 st.write(f'Your age: {age}')
