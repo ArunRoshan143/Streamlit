@@ -1,19 +1,24 @@
 import streamlit as st
 import pandas as pd
-st.title('🤖 ML Visualization')
+import numpy as np
 
-st.info('This app builds a ML model')
+# Title of the app
+st.title('My First Streamlit App')
 
-# with st.expander('data'):
-#   st.info('This app builds a ML model')
-  # submitted = st.form_submit_button("Submit")
-st.set_page_config(
-    page_title="My Streamlit App",
-    page_icon=":smiley:",
-    layout="wide",
-    initial_sidebar_state="expand"
-  
+# Display a dataframe
+data = pd.DataFrame({
+    'Column 1': [1, 2, 3, 4],
+    'Column 2': [10, 20, 30, 40]
+})
+st.write(data)
+
+# Add a slider
+x = st.slider('Select a value')
+st.write('Selected value:', x)
+
+# Add a line chart
+chart_data = pd.DataFrame(
+    np.random.randn(20, 3),
+    columns=['a', 'b', 'c']
 )
-
-  
-
+st.line_chart(chart_data)
