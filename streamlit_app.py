@@ -22,3 +22,26 @@ chart_data = pd.DataFrame(
     columns=['a', 'b', 'c']
 )
 st.line_chart(chart_data)
+
+
+
+import streamlit as st
+
+st.title('Streamlit Widgets Example')
+
+# Text input
+name = st.text_input('Enter your name')
+st.write(f'Hello, {name}!')
+
+# Slider
+age = st.slider('Select your age', 0, 100, 25)
+st.write(f'Your age: {age}')
+
+# Checkbox
+agree = st.checkbox('I agree')
+if agree:
+    st.write('Thank you for agreeing!')
+
+# Selectbox
+favorite_color = st.selectbox('Select your favorite color', ['Red', 'Green', 'Blue'])
+st.write(f'Your favorite color is {favorite_color}.')
