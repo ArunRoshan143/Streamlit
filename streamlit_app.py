@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-st.title('🤖 ML Visualization App')
+st.title('🤖 ML Visualization')
 
 st.info('This app builds a ML model')
 
