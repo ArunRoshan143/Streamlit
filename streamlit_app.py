@@ -11,7 +11,8 @@ stm.set_page_config(
     page_title="My Streamlit App",
     page_icon=":smiley:",
     layout="wide",
-    initial_sidebar_state="expanded"
+    initial_sidebar_state="expand"
+  
 )
 
   
